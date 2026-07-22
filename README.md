@@ -1,6 +1,6 @@
 # RNA_water
 
-# riboMoE: Mixture of Experts for Riboswitch Prediction
+# Mixture of Experts for Riboswitch Prediction
 
 This repository contains the implementation of a Mixture of Experts (MoE) neural network for predicting engineered riboswitch behavior from sequence-derived, thermodynamic, structural, and experimental features.
 
@@ -26,7 +26,7 @@ Performance was assessed using:
 ## Repository Structure
 
 ```
-riboMoE/
+RNA_water/
 ├── notebooks/
 │   └── Dense_model.ipynb
 │   └── Decision_tree.ipynb
@@ -62,7 +62,7 @@ balanced_dataset.csv
 
 ## Running the Notebook
 
-1. Open `riboMoE_single_upload.ipynb` in Google Colab.
+1. Open `.ipynb` in Google Colab.
 2. Run all cells.
 3. Upload `balanced_dataset.csv` when prompted.
 4. The notebook will:
