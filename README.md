@@ -68,19 +68,18 @@ balanced_dataset.csv
 
 ---
 
-## Running the Notebook
+## Running the Notebooks
 
-1. Open `.ipynb` in Google Colab.
-2. Run all cells.
-3. Upload `balanced_dataset.csv` when prompted.
-4. The notebook will:
-   - preprocess the data
-   - perform stratified 5-fold cross-validation
-   - retrain the model on the full training set
-   - evaluate on an independent test set
-   - generate evaluation plots
-   - save all outputs automatically
+1. Open the desired notebook in Google Colab.
+2. Upload `balanced_dataset.csv` when prompted.
+3. Run all cells.
 
+The notebook automatically:
+- preprocesses the data
+- performs stratified 5-fold cross-validation
+- retrains the final model on the full training set
+- evaluates on the held-out test set
+- saves evaluation figures and metrics
 ---
 
 ## Training Configuration
