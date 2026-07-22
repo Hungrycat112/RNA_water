@@ -2,11 +2,17 @@
 
 # Mixture of Experts for Riboswitch Prediction
 
-This repository contains the implementation of a Mixture of Experts (MoE) neural network for predicting engineered riboswitch behavior from sequence-derived, thermodynamic, structural, and experimental features.
+This repository contains implementations of machine learning models for predicting engineered riboswitch behavior from sequence-derived, thermodynamic, structural, and experimental features.
+
+## Implemented Models
+
+- **Decision Tree** – baseline classification model.
+- **Dense Neural Network** – modified from Joel's original implementation with architectural and training pipeline improvements.
+- **Mixture of Experts (MoE)** – original heterogeneous MoE architecture based on Audrey's implementation.
 
 ## Overview
 
-The model was evaluated using:
+The models were evaluated using:
 
 - Stratified 80/20 train-test split
 - Stratified 5-fold cross-validation on the training set
