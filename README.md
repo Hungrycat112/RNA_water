@@ -34,8 +34,10 @@ Performance was assessed using:
 ```
 RNA_water/
 ├── notebooks/
+│   └── Bhoomika_kmers_2026 (1).ipynb
 │   └── Dense_model.ipynb
 │   └── Decision_tree.ipynb
+│   └── Joel_OriginalDenseModelForMOE.ipynb
 │   └── riboswitch_model.py
 │   └── moe.py
 ├── requirements.txt
@@ -106,6 +108,25 @@ The notebook automatically saves:
 - Model predictions
 
 ---
+
+## Code Availability
+
+The original research and model-development code for this project is available in this repository:
+
+**RNA_water**  
+https://github.com/Hungrycat112/RNA_water
+
+This repository contains the collaborative experimental code used for model development, including baseline models, dense neural network experiments, k-mer analyses, and the original Mixture of Experts (MoE) implementation.
+
+A standardized version of the MoE pipeline, including preprocessing, training and inference scripts, pretrained model artifacts, and a reproducible Docker environment, is available in the companion repository:
+
+**Riboswitch-MoE**  
+https://github.com/Hungrycat112/riboswitch-moe
+
+The corresponding pre-built Docker for reproducible inference is available at:
+
+**Docker Hub**  
+https://hub.docker.com/r/hungrycat112/riboswitch-moe/tags
 
 ## Citation
 
