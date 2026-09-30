@@ -9,6 +9,8 @@ This repository contains implementations of machine learning models for predicti
 - **Decision Tree** – baseline classification model.
 - **Dense Neural Network** – modified from Joel's original implementation with architectural and training pipeline improvements.
 - **Mixture of Experts (MoE)** – original heterogeneous MoE architecture based on Audrey's implementation.
+- **Gaussian Naive Bayes** — probabilistic baseline classifier.
+- **Random Forest** — ensemble tree-based classifier.
 
 ## Overview
 
@@ -27,6 +29,25 @@ Performance was assessed using:
 - F1-score
 - Confusion Matrix
 
+## Ablation Analysis
+
+Ablation experiments were performed to determine how numerical and sequence-derived features contribute to model performance.
+
+Three complementary analyses were conducted:
+
+- **Single-feature ablation** — each numerical feature was individually set to zero while all other inputs were retained, allowing the effect of individual features on classification performance to be measured.
+
+- **Cumulative numerical-feature ablation** — numerical features were progressively removed according to their Decision Tree-derived sensitivity ranking. Performance was evaluated as increasingly many numerical features were removed.
+
+- **Input-source ablation** — models were compared under three input conditions:
+  - **Full input:** numerical features + nucleotide sequence
+  - **Sequence only:** all numerical features removed while retaining the original sequence
+  - **Numerical features only:** numerical features retained while the sequence was replaced with the same constant dummy sequence for every sample
+
+An additional all-inputs-zero control was evaluated for the MoE model to verify behavior in the absence of informative input.
+
+Ablation experiments were performed across the MoE, Dense Neural Network, Random Forest, Decision Tree, and Gaussian Naive Bayes models.
+
 ---
 
 ## Repository Structure
@@ -34,6 +55,7 @@ Performance was assessed using:
 ```
 RNA_water/
 ├── notebooks/
+│   └── ablation.ipynb
 │   └── Bhoomika_kmers_2026 (1).ipynb
 │   └── Dense_model.ipynb
 │   └── Decision_tree.ipynb
