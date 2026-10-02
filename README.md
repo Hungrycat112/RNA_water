@@ -57,6 +57,8 @@ RNA_water/
 ├── notebooks/
 │   └── ablation.ipynb
 │   └── Bhoomika_kmers_2026 (1).ipynb
+│   └── balance.py
+│   └── combine.py
 │   └── Dense_model.ipynb
 │   └── Decision_tree.ipynb
 │   └── Joel_OriginalDenseModelForMOE.ipynb
@@ -80,16 +82,18 @@ pip install -r requirements.txt
 
 ## Dataset
 
-The dataset (`balanced_dataset.csv`) is **not included** in this repository.
 
-Place the dataset in your working directory and upload it when prompted by the notebook.
+The balanced dataset used for model training and evaluation is available here:
 
-Expected input:
+**[balanced_dataset.csv](https://drive.google.com/file/d/1bErRQolHi5MjYMaaZY5YCTqGhsJhOddR/view)**
 
-```
-balanced_dataset.csv
-```
+### Generated Negative Dataset
 
+The complete generated negative dataset used for this project is available here:
+
+**[negative_cherry_lacz_results.csv]( https://drive.google.com/drive/folders/1BRw45MVYcqA6U_PlezpQUK8N0R07EZAa?usp=drive_link )**
+
+This file contains all negative data generated for the riboswitch experiments.
 ---
 
 ## Running the Notebooks
