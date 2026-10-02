@@ -55,15 +55,16 @@ Ablation experiments were performed across the MoE, Dense Neural Network, Random
 ```
 RNA_water/
 ├── notebooks/
-│   └── ablation.ipynb
-│   └── Bhoomika_kmers_2026 (1).ipynb
-│   └── balance.py
-│   └── combine.py
-│   └── Dense_model.ipynb
-│   └── Decision_tree.ipynb
-│   └── Joel_OriginalDenseModelForMOE.ipynb
+│   ├── ablation.ipynb
+│   ├── Bhoomika_kmers_2026 (1).ipynb
+│   ├── Decision_tree.ipynb
+│   ├── Dense_Model_classification.ipynb
+│   ├── Joel_OriginalDenseModelForMOE.ipynb
+│   ├── updated_negative_case_table (not pretty).ipynb
+│   ├── balance.py
+│   ├── combine.py
+│   ├── moe.py
 │   └── riboswitch_model.py
-│   └── moe.py
 ├── requirements.txt
 └── README.md
 ```
